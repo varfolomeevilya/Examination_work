@@ -4,7 +4,7 @@ import System_accontingFinancial.Interface.Displaying_walletstatus;
 
 import java.util.ArrayList;
 
-public abstract class Wallet implements Displaying_walletstatus {
+public abstract class Wallet implements Displaying_walletstatus, Getting_the_amount_to_wallets, Getting_total_wallets_card  {
 
     private String name;
     private int summa;
@@ -39,7 +39,10 @@ public abstract class Wallet implements Displaying_walletstatus {
     public void print(String name, int summa) {
         System.out.printf("%s \n", name, summa);
     }
-
+    @Override
+    public void print(int summa) {
+        System.out.println(summa);
+    }
     @Override
     public String toString() {
         return "Wallet{" +
