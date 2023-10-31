@@ -25,6 +25,7 @@ public  class Wallet implements Displaying_walletstatus, Getting_the_amount_to_w
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -35,6 +36,7 @@ public  class Wallet implements Displaying_walletstatus, Getting_the_amount_to_w
     public void setSumma(int summa) {
         this.summa = summa;
     }
+
     @Override
     public void print(String name, int summa) {
         System.out.printf("%s \n", name, summa);
