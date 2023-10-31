@@ -1,4 +1,4 @@
-package System_accontingFinancial.Interface;
+package System_accontingFinancial.Works;
 
 public interface Works_a_list_of_potential_income {
 

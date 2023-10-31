@@ -1,10 +1,10 @@
 package System_accontingFinancial;
 
-import System_accontingFinancial.Interface.Working_list_of_potential_costs;
+import System_accontingFinancial.Works.Working_list_of_potential_costs;
 
 import java.util.ArrayList;
 
-public abstract class ListPotentialCosts implements Working_list_of_potential_costs{
+public  class ListPotentialCosts implements Working_list_of_potential_costs{
     private String str;
     private double price;
 

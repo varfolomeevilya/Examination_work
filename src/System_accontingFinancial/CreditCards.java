@@ -1,8 +1,8 @@
 package System_accontingFinancial;
 
-import System_accontingFinancial.Interface.Display_status_credit_card;
+import System_accontingFinancial.States.Display_status_credit_card;
 
-public abstract class CreditCards implements Display_status_credit_card {
+public  class CreditCards implements Display_status_credit_card{
 
     private String name;
 
@@ -34,7 +34,6 @@ public abstract class CreditCards implements Display_status_credit_card {
     public void print(String name, int summa) {
         System.out.printf("%s \n",name, summa);
     }
-
     @Override
     public String toString() {
         return "CreditCards{" +

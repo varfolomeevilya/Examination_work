@@ -1,8 +1,7 @@
-package System_accontingFinancial.Interface;
+package System_accontingFinancial.States;
 
 public interface Displaying_walletstatus{
-   String getName();
-   int getSumma();
+
       void print(String name, int summa);
 
 }

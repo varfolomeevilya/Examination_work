@@ -1,10 +1,12 @@
 package System_accontingFinancial;
 
-import System_accontingFinancial.Interface.Displaying_walletstatus;
+import System_accontingFinancial.States.Displaying_walletstatus;
+import System_accontingFinancial.Getting.Getting_the_amount_to_wallets;
+import System_accontingFinancial.Getting.Getting_total_wallets_card;
 
 import java.util.ArrayList;
 
-public abstract class Wallet implements Displaying_walletstatus {
+public  class Wallet implements Displaying_walletstatus, Getting_the_amount_to_wallets, Getting_total_wallets_card {
 
     private String name;
     private int summa;
@@ -23,7 +25,6 @@ public abstract class Wallet implements Displaying_walletstatus {
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -34,10 +35,14 @@ public abstract class Wallet implements Displaying_walletstatus {
     public void setSumma(int summa) {
         this.summa = summa;
     }
-
     @Override
     public void print(String name, int summa) {
         System.out.printf("%s \n", name, summa);
+    }
+
+    @Override
+    public void print(int summa) {
+        System.out.printf("%s \n",summa);
     }
 
     @Override
@@ -47,5 +52,4 @@ public abstract class Wallet implements Displaying_walletstatus {
                 ", summa=" + summa +
                 '}';
     }
-
 }

@@ -1,8 +1,8 @@
 package System_accontingFinancial;
 
-import System_accontingFinancial.Interface.Works_a_list_of_potential_income;
+import System_accontingFinancial.Works.Works_a_list_of_potential_income;
 
-public abstract class ListPotentialIncome implements Works_a_list_of_potential_income {
+public  class ListPotentialIncome implements Works_a_list_of_potential_income {
 
 
     private int prize;

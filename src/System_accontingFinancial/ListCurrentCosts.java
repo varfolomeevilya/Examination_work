@@ -1,11 +1,11 @@
 package System_accontingFinancial;
 
 
-import System_accontingFinancial.Interface.Working_list_of_current_costs;
+import System_accontingFinancial.Works.Working_list_of_current_costs;
 
 import java.util.ArrayList;
 
-public abstract class ListCurrentCosts implements Working_list_of_current_costs {
+public  class ListCurrentCosts implements Working_list_of_current_costs {
 
     private String str;
     private double price;
@@ -45,7 +45,6 @@ public abstract class ListCurrentCosts implements Working_list_of_current_costs 
     public void print(String str, double price) {
         System.out.printf("%s", str, price);
     }
-
     @Override
     public String toString() {
         return "ListCurrentCosts{" +
